@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1980px;
+    height: 1080px;
+}
+
+.form__fieldset {
+    border-radius: 10%;
+    border: none;
+    background-color: #2D2F3A;    
+    width: 400px;
+    height: 455px;
+}
+
+.header__form {
+    width: 100%;
+    height: 85px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: #655E6C;
+    text-align: center;
+    line-height: 90px;
+}
+
+.header__form > h1 {
+    font-family: Roboto;
+    font-weight: 300;
+    text-transform: uppercase; 
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+/* .icon {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.icon > i {
+    font-size: 20px;
+    color: rgba(101, 94, 108, .8);
+} */
+
+input[type="email"],
+input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #6E6A77;
+    width: 84%;
+    height: 50px;
+    margin: 45px 0 0 30px;
+    padding: 0 0 0 53px;
+    background-color: transparent;
+    color: #fff;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="email"]:active,
+input[type="password"]:active {
+    border: none;
+    outline: 2px double #6E6A77;
+    transition: .5s;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+    font-size: 1.5em;
+    font-family: Roboto;
+    font-weight: 400;
+    color: rgba(101, 94, 108, 1);
+}
+
+.email_and_icon,
+.password_and_icon {
+    position: relative;
+}
+
+.email_and_icon i,
+.password_and_icon i {
+    position: absolute;
+    top: 53px;
+    left: 40px;
+    font-size: 1.5em;
+    color: #6E6A77;
+}
+
+.main__checkbox_and_forgot_password {
+    display: flex;
+    width: 100%;
+    margin: 8% 0 0 30px;
+}
+
+.label_CHECKBOX_for_user {
+    margin-left: 3%;
+    font-family: Roboto;
+    font-weight: 300;
+    color: #6E6A77;
+}
+
+.form__link__forgot-password {
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    text-decoration: none;
+    margin-left: 20%;
+    color: #6E6A77;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
+input[type="checkbox"]:checked +label::before {
+    background-color: rgba(25, 25, 25, 0.5);
+}
+
+input[type="checkbox"]:checked +label::after {
+    content: '';
+    position: absolute;
+    display: inline-block;    
+    left: 3px;
+    top: 6px;
+    width: 7px;
+    height: 3px;
+    border: 3px solid #6E6A77;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+.form__button-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.btn {
+    display: block;
+    width: 55%;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: #454555;
+    
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 1.2em;
+    text-transform: uppercase; 
+    letter-spacing: 1.3px;
+    color: #fff;
+}
